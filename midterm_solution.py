@@ -57,3 +57,18 @@ if remaining_balance >= 0:
     status = "Budget OK! Keep it up."
 else:
     status = "Overspent! Reduce spending."
+
+print("=" * 60)
+print(f"{student_name.upper()} -- WEEKLY EXPENSE LOG")
+print("=" * 60)
+print(f"Weekly Budget : P{weekly_budget:.2f}")
+
+for exp in logged_expenses:
+    print(f"[{exp[0]}] {exp[1]}")
+    print(f"    {exp[2]:<20} P{exp[3]:>8.2f} {exp[4]}")
+
+print("-" * 60)
+print(f"Total Spent : P{total_spent:.2f}")
+print(f"Remaining   : P{remaining_balance:.2f}")
+print(f"Status      : {status}")
+print("=" * 60)
