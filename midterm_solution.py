@@ -18,3 +18,14 @@ example_expenses = [
     "Notebook, pen, bond paper",
     "Games, movies, hangout"
 ]
+
+logged_expenses = []
+total_spent = 0.0
+
+print("-" * 66)
+print(f"| {'#':<3} | {'Category':<20} | {'Example Expenses':<34} |")
+print("-" * 66)
+
+for i in range(len(categories)):
+    print(f"| {i+1:<3} | {categories[i]:<20} | {example_expenses[i]:<34} |")
+print("-" * 66)
